@@ -1,1 +1,5 @@
-console.log('hello world!');
+export const migrate = () => {
+  return new Promise((resolve) => {
+    resolve();
+  });
+};
