@@ -1,0 +1,24 @@
+{
+  "name": "migrations",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib",
+    "lint": "eslint src",
+    "test": "mocha --compilers js:babel-core/register --reporter dot test/setup.js test/*/**/**.js",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-env": "^0.0.9",
+    "babel-root-import": "^4.1.5",
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-walmart": "^1.1.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "mocha": "^3.2.0"
+  }
+}

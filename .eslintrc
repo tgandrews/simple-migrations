@@ -1,0 +1,9 @@
+---
+extends:
+  - walmart/configurations/es6-node
+parserOptions:
+  sourceType: module
+rules:
+  quotes:
+    - 2
+    - single
