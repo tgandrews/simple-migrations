@@ -29,7 +29,7 @@ const getMigrationsAfterCurrent = (names, currentVersion) => {
   if (currentVersion) {
     index = names.indexOf(currentVersion);
   }
-  return names.slice(index);
+  return names.slice(index + 1);
 };
 
 const populateMigrationDetails = (names, directory) => {
