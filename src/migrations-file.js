@@ -27,9 +27,9 @@ const getListOfMigrationNames = (directory) => {
 const getMigrationsAfterCurrent = (names, currentVersion) => {
   let index = 0;
   if (currentVersion) {
-    index = names.indexOf(currentVersion);
+    index = names.indexOf(currentVersion) + 1;
   }
-  return names.slice(index + 1);
+  return names.slice(index);
 };
 
 const populateMigrationDetails = (names, directory) => {
