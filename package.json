@@ -1,5 +1,5 @@
 {
-  "name": "migrations",
+  "name": "simple-migrations",
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
